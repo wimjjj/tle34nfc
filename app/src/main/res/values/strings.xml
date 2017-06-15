@@ -1,4 +1,12 @@
 <resources>
+    //Strings in main menu
+    <string name="toExplanation">Uitleg</string>
+    <string name="toHighscore">Highscores</string>
+    <string name="toGame">Start het spel</string>
+
+    //Strings in explaination
+
+    //Strings in game
     <string name="app_name">tle34nfc</string>
     <string name="instructions">Vind alle vliegtuigen</string>
     <string name="_0">0/8</string>
@@ -6,4 +14,12 @@
     <string name="already_found">Deze heb je al</string>
     <string name="score">score: 0</string>
     <string name="score_without_number">score:</string>
+
+    //Strings in game completed
+    <string name="finished">Je hebt ze allemaal gevonden!</string>
+    <string name="toMenu">Menu</string>
+
+
+    //Srings in highscores
+
 </resources>

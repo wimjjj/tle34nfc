@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.scanner.tle34.wimjo.tle34nfc.LevelCompleteActivity"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        >
+
+        <TextView
+            android:id="@+id/msg"
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:shadowColor="#000000"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="5"
+            android:text="@string/finished"
+            android:textAlignment="center"
+            android:textColor="#FF0000"
+            android:textSize="38sp"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            >
+
+            <Button
+                android:id="@+id/highscore_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="toHighScore"
+                android:text="@string/toHighscore"
+                />
+
+            <Button
+                android:id="@+id/menu_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="toMainMenu"
+                android:text="@string/toMenu"
+                android:layout_marginBottom="200dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
