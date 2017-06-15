@@ -1,5 +1,6 @@
 <resources>
     //Strings in main menu
+    <string name="welcomeMessage">Hallo</string>
     <string name="toExplanation">Uitleg</string>
     <string name="toHighscore">Highscores</string>
     <string name="toGame">Start het spel</string>
@@ -18,6 +19,7 @@
     //Strings in game completed
     <string name="finished">Je hebt ze allemaal gevonden!</string>
     <string name="toMenu">Menu</string>
+
 
 
     //Srings in highscores

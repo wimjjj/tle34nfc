@@ -23,7 +23,7 @@
             android:shadowDx="5"
             android:shadowDy="5"
             android:shadowRadius="5"
-            android:text="@string/finished"
+            android:text="@string/welcomeMessage"
             android:textAlignment="center"
             android:textColor="#FF0000"
             android:textSize="38sp"
