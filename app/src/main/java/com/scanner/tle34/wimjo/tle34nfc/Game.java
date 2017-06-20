@@ -35,7 +35,7 @@ public class Game extends AppCompatActivity {
 
     private int score = 0;
 
-    private String[] badTags = new String[] { "4101-187411963-128", "2" };
+    private String[] badTags = new String[] { "4101-187411963-128", "2", };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -121,16 +121,24 @@ public class Game extends AppCompatActivity {
         return false;
     }
 
+    private boolean isAlreadyFound(String id){
+        for(String s : foundTags){
+            if(s.equals(id)){
+                return true;
+            }
+        }
+
+        return false;
+    }
+
     private void updateId(String id){
         Log.i("nfc_ID", id);
     }
 
     private void increaseScore(String id){
-        for(String s : foundTags){
-            if(s.equals(id)){
-                alreadyFound();
-                return;
-            }
+        if(isAlreadyFound(id)){
+            alreadyFound();
+            return;
         }
 
         resetMessage();
