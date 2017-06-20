@@ -9,7 +9,7 @@
     >
 
     <RelativeLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="5dp"
         >
@@ -45,6 +45,11 @@
                 android:layout_height="wrap_content"
                 android:onClick="toGame"
                 android:text="@string/toGame"
+                android:background="#99ffffff"
+                android:textColor="#FF0000"
+                android:textSize="25sp"
+                android:layout_marginBottom="15sp"
+                android:padding="15sp"
                 />
 
             <Button
@@ -53,6 +58,11 @@
                 android:layout_height="wrap_content"
                 android:onClick="toHighScore"
                 android:text="@string/toHighscore"
+                android:background="#99ffffff"
+                android:textColor="#FF0000"
+                android:textSize="25sp"
+                android:layout_marginBottom="15sp"
+                android:padding="15sp"
                 />
 
             <Button
@@ -61,8 +71,12 @@
                 android:layout_height="wrap_content"
                 android:onClick="toExplanation"
                 android:text="@string/toExplanation"
-                android:layout_marginBottom="200dp"
-                />
+                android:background="#99ffffff"
+                android:textColor="#FF0000"
+                android:textSize="25sp"
+                android:layout_marginBottom="150dp"
+                android:padding="15sp"
+            />
 
         </LinearLayout>
 

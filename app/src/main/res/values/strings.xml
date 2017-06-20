@@ -23,7 +23,7 @@
     //Strings in game completed
     <string name="finished">Je hebt ze allemaal gevonden!</string>
     <string name="toMenu">Menu</string>
-
+    <string name="badTagMsg">Dit is geen vlegtuig</string>
 
 
     //Srings in highscores
