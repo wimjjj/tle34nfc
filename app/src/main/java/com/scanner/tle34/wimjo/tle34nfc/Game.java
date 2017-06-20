@@ -105,8 +105,10 @@ public class Game extends AppCompatActivity {
 
         updateId(id);
 
-        if(isTagBad(id))
+        if(isTagBad(id)) {
             setMessage(getString(R.string.badTagMsg));
+            updateScore(-5);
+        }
         else
             increaseScore(id);
     }
