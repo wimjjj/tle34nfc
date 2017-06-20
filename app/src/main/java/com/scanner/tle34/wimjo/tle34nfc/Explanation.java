@@ -14,6 +14,7 @@ public class Explanation extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_explanation);
+        setFonts();
     }
 
     private void setFonts() {
