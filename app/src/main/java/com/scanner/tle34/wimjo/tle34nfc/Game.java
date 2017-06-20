@@ -13,6 +13,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
@@ -33,6 +34,8 @@ public class Game extends AppCompatActivity {
     private int itemsInLevel = 8;
 
     private int score = 0;
+
+    private String[] badTags = new String[] { "4101-187411963-128", "2" };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -102,7 +105,18 @@ public class Game extends AppCompatActivity {
 
         updateId(id);
 
-        increaseScore(id);
+        if(isTagBad(id))
+            setMessage(getString(R.string.badTagMsg));
+        else
+            increaseScore(id);
+    }
+
+    private boolean isTagBad(String id){
+        for(String s : badTags){
+            if(s.equals(id)) return true;
+        }
+
+        return false;
     }
 
     private void updateId(String id){
