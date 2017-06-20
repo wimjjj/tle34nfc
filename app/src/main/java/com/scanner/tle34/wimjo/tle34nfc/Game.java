@@ -204,6 +204,7 @@ public class Game extends AppCompatActivity {
     private void onComplete(){
 
         Intent complete = new Intent(getBaseContext(), LevelCompleteActivity.class);
+        complete.putExtra("SCORE", score);
         startActivity(complete);
         finish();
     }
