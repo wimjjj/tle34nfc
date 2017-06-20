@@ -11,7 +11,9 @@ public class LevelCompleteActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_level_complete);
+
         playSound(R.raw.level_complete);
 
     }
