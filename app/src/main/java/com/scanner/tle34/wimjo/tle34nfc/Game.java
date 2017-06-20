@@ -31,7 +31,7 @@ public class Game extends AppCompatActivity {
 
     private ArrayList<String> foundTags = new ArrayList<String>();
 
-    private int itemsInLevel = 8;
+    private int itemsInLevel = 7;
 
     private int score = 0;
 
