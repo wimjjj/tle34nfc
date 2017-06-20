@@ -6,6 +6,10 @@
     <string name="toGame">Start het spel</string>
 
     //Strings in explaination
+    <string name="exp_title">Uitleg</string>
+    <string name="exp_text">Tik met de telefoon op de vliegtuigen. \n
+                            Voor iets wat geen vliegtuig is krijg je minpunten. \n
+                            Probeer het level zo snel mogelijk uit te spelen om een highscore te halen.</string>
 
     //Strings in game
     <string name="app_name">tle34nfc</string>
