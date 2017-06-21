@@ -9,8 +9,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.scanner.tle34.wimjo.tle34nfc.Http.PostScoreTask;
+
 public class LevelCompleteActivity extends AppCompatActivity {
 
+    private int score = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,11 +25,15 @@ public class LevelCompleteActivity extends AppCompatActivity {
         setFonts();
 
         Intent intent = getIntent();
-        showScore(intent.getIntExtra("SCORE", 1));
 
+        score = intent.getIntExtra("SCORE", 1);
+
+        drawScore();
+
+        new PostScoreTask().execute(String.valueOf(score));
     }
 
-    private void showScore(int score){
+    private void drawScore(){
         ((TextView) findViewById(R.id.score)).setText(String.valueOf(score));
     }
 

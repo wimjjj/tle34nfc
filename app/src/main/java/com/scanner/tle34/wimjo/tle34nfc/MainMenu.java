@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.scanner.tle34.wimjo.tle34nfc.Http.PostScoreTask;
+
 public class MainMenu extends AppCompatActivity {
 
     @Override
@@ -16,6 +18,10 @@ public class MainMenu extends AppCompatActivity {
         setContentView(R.layout.activity_main_menu);
 
         setFonts();
+
+//        VERY TEMP
+
+
     }
 
     public void toHighScore(View v){

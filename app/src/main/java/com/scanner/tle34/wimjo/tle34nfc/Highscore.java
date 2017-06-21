@@ -1,10 +1,12 @@
 package com.scanner.tle34.wimjo.tle34nfc;
 
+import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.scanner.tle34.wimjo.tle34nfc.Http.GetScoreTask;
 import com.scanner.tle34.wimjo.tle34nfc.Http.ScoreListCallback;
@@ -19,6 +21,8 @@ public class Highscore extends AppCompatActivity implements ScoreListCallback {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_highscore);
+
+        setFonts();
 
         GetScoreTask task = new GetScoreTask();
         task.setCallback(this);
@@ -40,5 +44,11 @@ public class Highscore extends AppCompatActivity implements ScoreListCallback {
 
         ListView listView = (ListView) findViewById(R.id.scores_list);
         listView.setAdapter(adapter);
+    }
+
+    private void setFonts(){
+        Typeface typeface = Typeface.createFromAsset(getAssets(), "fonts/WalterTurncoat.ttf");
+
+        ((TextView)findViewById(R.id.top)).setTypeface(typeface);
     }
 }
