@@ -29,7 +29,7 @@ public class Name extends AppCompatActivity {
 
         String name = input.getText().toString();
 
-        if(name.length() == 0 || name.equals(""))
+        if(name.length() == 0 || name.equals("") || name.equals("Naam"))
             return;
 
         DataHolder.name = name;
