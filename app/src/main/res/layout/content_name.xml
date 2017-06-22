@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.scanner.tle34.wimjo.tle34nfc.Name"
+    tools:showIn="@layout/activity_name"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+            android:text="@string/name_input_label"
+            android:textAlignment="center"
+            android:textColor="#FF0000"
+            android:textSize="38sp"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/name_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="30"
+            android:inputType="textPersonName"
+            android:text="@string/name"
+            android:textColor="#FF0000"
+            android:textSize="38sp"
+            android:textStyle="bold"
+            android:background="#99ffffff"
+            android:layout_margin="5sp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        <Button
+            android:id="@+id/start_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF0000"
+            android:layout_marginBottom="1dp"
+            android:text="@string/start"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="400sp"
+            android:textSize="38sp"
+            android:onClick="lauchGame"
+            />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

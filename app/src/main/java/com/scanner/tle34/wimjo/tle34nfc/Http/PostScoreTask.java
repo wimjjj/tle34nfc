@@ -2,6 +2,8 @@ package com.scanner.tle34.wimjo.tle34nfc.Http;
 
 import android.os.AsyncTask;
 
+import com.scanner.tle34.wimjo.tle34nfc.Models.DataHolder;
+
 import org.apache.http.NameValuePair;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
@@ -29,7 +31,7 @@ public class PostScoreTask extends AsyncTask<String, Void,  Void> {
             ArrayList<NameValuePair> pairs = new ArrayList<NameValuePair>();
 
             NameValuePair score = new BasicNameValuePair("score", s);
-            NameValuePair name = new BasicNameValuePair("name", "wim");
+            NameValuePair name = new BasicNameValuePair("name", DataHolder.name);
             NameValuePair level = new BasicNameValuePair("level", "0");
 
             pairs.add(score);

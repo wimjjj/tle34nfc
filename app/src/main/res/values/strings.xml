@@ -27,6 +27,10 @@
     <string name="go_back">Ga terug</string>
     <string name="real_zero">0</string>
     <string name="topscores">Topscores</string>
+    <string name="title_activity_name">Name</string>
+    <string name="name_input_label">Vul je naam in</string>
+    <string name="name">Naam</string>
+    <string name="start">start</string>
 
 
     //Srings in highscores

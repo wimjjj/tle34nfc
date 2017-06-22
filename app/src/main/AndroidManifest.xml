@@ -30,7 +30,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Explanation"></activity>
+        <activity android:name=".Explanation" />
+        <activity
+            android:name=".Name"
+            android:label="@string/title_activity_name"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
