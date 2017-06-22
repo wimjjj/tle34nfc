@@ -39,7 +39,7 @@
             android:textColor="#FF0000"
             android:text="@string/_0"
             android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-            android:textSize="200sp"
+            android:textSize="150sp"
             android:textStyle="bold"
             android:shadowColor="#000000"
             android:shadowRadius="10"

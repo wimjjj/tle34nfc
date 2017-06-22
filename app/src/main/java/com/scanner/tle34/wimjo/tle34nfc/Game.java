@@ -31,11 +31,20 @@ public class Game extends AppCompatActivity {
 
     private ArrayList<String> foundTags = new ArrayList<String>();
 
-    private int itemsInLevel = 7;
+    private int itemsInLevel = 14;
 
     private int score = 0;
 
-    private String[] badTags = new String[] { "4101-187411963-128", "2", };
+    private String[] badTags = new String[] {
+            "449-5050-772-127",
+            "456-5050-772-127",
+            "440-5650-772-127",
+            "446-5650-772-127",
+            "4-12498-628873-128",
+            "4-11898-628873-128",
+            "425-6050-772-127",
+            "419-6050-772-127",
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -149,7 +158,7 @@ public class Game extends AppCompatActivity {
 
         updateScore(10);
 
-        ((TextView) findViewById(R.id.counter)).setText(String.valueOf(counter) + "/8");
+        ((TextView) findViewById(R.id.counter)).setText(String.valueOf(counter) + "/14");
 
         playSound(R.raw.correct_click);
 
